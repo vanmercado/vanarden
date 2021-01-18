@@ -1,0 +1,218 @@
+/* Navbar */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+nav {
+  width: 100%;
+  height: 40px;
+  background: #7fa8dd;
+  position: fixed;
+}
+label.logo {
+  color: rgb(66, 9, 66);
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 40px;
+  padding: 0 50px;
+}
+
+nav ul {
+  float: right;
+  margin: 0px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 40px;
+  margin: 0 10px;
+}
+nav ul li a {
+  color: #eef2f5;
+  font-size: 15px;
+  padding: 5px 8px;
+  border-radius: 3px;
+}
+.active,
+a:hover {
+  background: #4498be;
+  transition: 0.5s;
+}
+.checkbtn {
+  font-size: 30px;
+  color: rgb(75, 23, 23);
+  float: left;
+  line-height: 35px;
+  margin-left: 40px;
+  cursor: pointer;
+  display: none;
+}
+#toggle {
+  display: none;
+}
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 25px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 15px;
+  }
+}
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    background: #2c3e50;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: #0082e6;
+  }
+  #toggle:checked ~ ul {
+    left: 0;
+  }
+}
+/* end of navbar */
+/* BODY */
+body {
+  font-family: montserrat;
+  background: rgb(155, 195, 235);
+}
+/* HOMEPAGE */
+.HOMEpage {
+  background: rgb(155, 195, 235);
+  height: 900px;
+}
+.bigname {
+  padding-top: 10%;
+  padding-left: 100px;
+  color: #1a5685;
+  display: inline-block;
+}
+.name {
+  text-transform: uppercase;
+  font-size: 50px;
+}
+.home-image {
+  padding-top: 10%;
+  padding-right: 10%;
+  float: right;
+}
+
+/* for button-download */
+a:hover {
+  color: #e8eb58;
+  transition: 0.5s;
+}
+#button {
+  margin: 20px auto 0;
+  padding: 10px 15px;
+  background-color: rgb(155, 195, 235);
+  color: #2e1263;
+
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid #2e1263;
+  border-radius: 5px;
+  text-decoration: none;
+  letter-spacing: 4px;
+  outline: none;
+  cursor: pointer;
+}
+#button:hover {
+  transition: 0.3s;
+  background-color: #5a94df;
+  color: rgb(33, 70, 92);
+  text-decoration: underline;
+}
+
+/* ABOUT PAGE */
+.ABOUTpage {
+  background: rgb(135, 186, 236);
+  width: 100%;
+  height: 900px;
+}
+.about {
+  text-align: center;
+  color: rgb(77, 10, 77);
+  padding-top: 10%;
+}
+.about-title {
+  font-size: 45px;
+  padding-bottom: 20px;
+}
+.about-me {
+  text-align: center;
+  font-size: 19px;
+  color: rgb(104, 20, 104);
+  padding: 0 100px 20px 100px;
+}
+/* WORK PAGE */
+.WORKpage {
+  background: rgb(155, 195, 235);
+  box-sizing: border-box;
+  width: 100%;
+  height: 900px;
+}
+.work-title {
+  font-size: 45px;
+  color: rgb(54, 8, 54);
+  padding-top: 10%;
+  text-align: center;
+}
+
+.work-text {
+  text-align: center;
+  color: rgb(97, 4, 97);
+  padding-bottom: 40px;
+}
+
+.work-image-one,
+.work-image-two,
+.work-image-three {
+  width: 470px;
+  height: 200px;
+  margin: 15px;
+}
+
+/* CONTACT PAGE */
+.CONTACTpage {
+  background: rgb(135, 186, 236);
+  width: 100%;
+  height: 750px;
+}
+.contact {
+  padding-top: 15%;
+}
+.contact-title {
+  text-align: center;
+  color: rgb(92, 6, 92);
+  font-size: 50px;
+  padding-bottom: 45px;
+}
+.contact-emailme,
+.contact-gmail {
+  text-align: center;
+  color: rgb(82, 8, 82);
+  font-size: 30px;
+}
